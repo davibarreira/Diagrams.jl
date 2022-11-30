@@ -52,5 +52,15 @@ The envelope of a geometric shape
 """
 envelope(t::AbstractGeometry, v::Vector) = support(t, normalize(v))
 
+# @doc"""
+# maxgrade(A::MultiVector)
+
+# Returns the maximum grade of a multivector A
+# with non-null value, i.e. ``\\langle A \\rangle_{max}``
+# """
+# function maxgrade(A::MultiVector)
+#     grade(A,basegrade(algebra(A), findlast(x -> !(x ≈ 0), vector(A))))
+# end
+
 
 end
